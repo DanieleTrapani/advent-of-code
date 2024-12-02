@@ -8,4 +8,5 @@ import (
 
 func main() {
 	fmt.Println("Day1: ", days.Day1())
+	fmt.Println("Day2: ", days.Day2())
 }

@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"log"
 	"os"
+	"strconv"
 )
 
 func GetData(fileName string) []string {
@@ -22,4 +23,13 @@ func GetData(fileName string) []string {
 	}
 
 	return data
+}
+
+func MapToInt(s []string) []int {
+	intSlice := make([]int, 0, len(s))
+	for _, el := range s {
+		intEl, _ := strconv.Atoi(el)
+		intSlice = append(intSlice, intEl)
+	}
+	return intSlice
 }
