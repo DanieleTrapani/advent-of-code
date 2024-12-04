@@ -33,3 +33,8 @@ func MapToInt(s []string) []int {
 	}
 	return intSlice
 }
+
+func ToInt(s string) int {
+	i, _ := strconv.Atoi(s)
+	return i
+}
